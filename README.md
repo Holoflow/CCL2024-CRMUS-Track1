@@ -1,5 +1,4 @@
 # Mainfest:
-* prompt.docx: 提示词策略，CR和MU两类均在该文件中。
 * contest_data: 存放比赛数据以及代码生成的结果 
 * experiments: 本次比赛的实验代码
   * chatgpt_llm: ChatGPT跑实验
