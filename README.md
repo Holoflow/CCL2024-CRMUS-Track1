@@ -14,5 +14,5 @@
 # 如何运行代码：
 * 本代码在PyCharm IDE中运行，如果是命令行运行，可能需要修改下文件的读取路径（改成绝对路径）
 * 第一步，修改utils中封装的LLM中的apikey 、secrec key之类的信息，替换为自己的key
-* 第二步，分别执行chatgpt_llm.py, wenxin_llm.py和tongyi_llm.py，得到3个LLM的运行结果，这一步的结果会写入到contest_data目录
-* 第三步，执行vote.py，这一步的结果会写入到contest_data目录，为最终的提交结果。
+* 第二步，在experiments目录下分别执行chatgpt_llm.py, wenxin_llm.py和tongyi_llm.py，得到3个LLM的运行结果，这一步的结果会写入到contest_data目录
+* 第三步，执行vote.py，这一步会从contest_data目录中读取第二步得到的3个LLM运行的结果，通过投票和二次提示词确认策略把结果写入到contest_data目录，做为最终的提交结果。
